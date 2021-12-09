@@ -173,8 +173,21 @@ body {
 	}
 }
 
+/* x-Small devices (landscape phones, less than 576px)*/
+@media (max-width: 600px) and (orientation: landscape) {
+	.hero__title {
+		font-size: 2.4rem !important;
+		// outline: 2psx solid blue;
+	}
+
+	body > div.flex-container > div > section.bottom > div > ul > li {
+		display: none !important;
+		// outline: 2px solid blue;
+	}
+}
+
 /* Small devices (landscape phones, more than 576px)*/
-@media (min-width: 576px) {
+@media (min-width: 600px) {
 	.hero__greeting {
 		.hr {
 			width: 100px;
@@ -202,6 +215,10 @@ body {
 
 				.navlinks__large {
 					display: flex !important;
+
+					.navlinks__about {
+						margin-left: auto;
+					}
 				}
 			}
 
@@ -215,6 +232,14 @@ body {
 					max-width: 80% !important;
 					font-size: 5rem;
 					top: 50% !important;
+				}
+			}
+
+			.bottom {
+				.footer {
+					a {
+						display: none;
+					}
 				}
 			}
 		}
@@ -253,16 +278,24 @@ body {
 }
 @media (min-width: 992px) and (orientation: landscape) {
 	.hero__title {
-		font-size: 4.3rem !important;
-		top: 55% !important;
+		font-size: 4.1rem !important;
+		max-width: 60%;
 		outline: 2px solid purple;
 	}
 }
 
 // x-Large devices (more than 1200px)
 @media (min-width: 1200px) {
+	.hero__title {
+		font-size: 5.5rem !important;
+		outline: 2px solid black;
+	}
 }
 
 // xx-Large devices (more than 1200px)
 @media (min-width: 1400px) {
+	.hero__title {
+		font-size: 5.9rem !important;
+		outline: 2px solid grey;
+	}
 }

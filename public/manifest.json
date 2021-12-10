@@ -1,10 +1,10 @@
 {
-  "name": "CodingPhase",
-  "short_name": "CodingPhase",
-  "background_color": "#ad38f1",
-  "theme_color": "#ad38f1",
+  "name": "HTML email developer",
+  "short_name": "HTML email developer",
+  "background_color": "#35363a",
+  "theme_color": "#68e1ec",
   "start_url": "/",
-  "description": "A platform to learn how to code",
+  "description": "Vera - HTML email developer",
   "orientation": "any",
   "display": "standalone",
   "icons": [
@@ -21,11 +21,6 @@
     {
       "src": "img/icons/512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "img/icons/1024.png",
-      "sizes": "1024x1024",
       "type": "image/png"
     }
   ]

@@ -50,6 +50,9 @@ body {
 				a {
 					text-decoration: none;
 					color: $grey;
+					&:hover {
+						color: $lime-yellow;
+					}
 				}
 			}
 		}
@@ -68,14 +71,14 @@ body {
 				color: black;
 
 				&:hover {
-					font-weight: 600;
+					font-weight: 500;
 					span {
 						width: 2px;
 					}
 				}
 
 				.hr {
-					width: 50px;
+					width: 30px;
 					border-bottom: 2px solid black;
 					display: inline-block;
 				}
@@ -155,28 +158,28 @@ body {
 				.container {
 					background: $lime-yellow;
 					height: 100%;
-				}
 
-				.moto {
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-end;
-					align-items: flex-end;
-					margin-right: 20%;
-					height: 80%;
+					.moto {
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-end;
+						align-items: flex-end;
+						margin-right: 20%;
+						height: 80%;
 
-					li {
-						padding-bottom: 10px;
+						li {
+							padding-bottom: 10px;
+						}
 					}
-				}
 
-				.footer {
-					display: flex;
-					align-items: flex-end;
-					height: 20%;
+					.footer {
+						display: flex;
+						align-items: flex-end;
+						height: 20%;
 
-					.footer__about {
-						margin-right: auto;
+						.footer__about {
+							margin-right: auto;
+						}
 					}
 				}
 			}
@@ -188,12 +191,10 @@ body {
 @media (max-width: 575px) and (orientation: landscape) {
 	.hero__title {
 		font-size: 2.4rem !important;
-		// outline: 2psx solid blue;
 	}
 
 	body > div.flex-container > div > section.bottom > div > ul > li {
 		display: none !important;
-		// outline: 2px solid blue;
 	}
 }
 
@@ -210,10 +211,13 @@ body {
 	}
 }
 
-@media (min-width: 575px) and (orientation: landscape) {
+@media (min-width: 575px) and (max-height: 320px) {
 	.hero__title {
 		font-size: 2.9rem !important;
-		// outline: 2px solid paleturquoise;
+	}
+
+	body > div.flex-container > div > section.bottom > div > ul > li {
+		display: none !important;
 	}
 }
 
@@ -245,7 +249,7 @@ body {
 				.hero__title {
 					left: -24px !important;
 					max-width: 80% !important;
-					font-size: 5rem;
+					font-size: 4.1rem;
 					top: 50% !important;
 				}
 			}
@@ -264,7 +268,7 @@ body {
 					outline: olive;
 				}
 				.container {
-					outline: orchid !important;
+					width: 50%;
 				}
 
 				.footer {
@@ -273,19 +277,10 @@ body {
 			}
 		}
 	}
-
-	.hero__title {
-		position: absolute;
-		top: 45%;
-		left: 20%;
-		max-width: 70%;
-		line-height: 1.5;
-	}
 }
 @media (min-width: 767px) and (orientation: landscape) {
 	.hero__title {
 		font-size: 3.6rem !important;
-		outline: 2px solid greenyellow;
 	}
 
 	.bottom {
@@ -305,25 +300,19 @@ body {
 	.hero__title {
 		font-size: 4.1rem !important;
 		max-width: 60%;
-		outline: 2px solid purple;
 	}
 }
 
 // x-Large devices (more than 1200px)
 @media (min-width: 1200px) {
 	html {
-		font-size: 1.8rem;
+		font-size: 1.4rem;
+		.bottom > ul > li {
+			font-size: 1.4rem;
+		}
 	}
-	// .hero__title {
-	// 	font-size: 5.5rem !important;
-	// 	outline: 2px solid black;
-	// }
 }
 
 // xx-Large devices (more than 1200px)
 @media (min-width: 1400px) {
-	.hero__title {
-		font-size: 5.9rem !important;
-		outline: 2px solid grey;
-	}
 }

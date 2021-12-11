@@ -13,33 +13,36 @@ body {
 		display: flex;
 		flex-direction: row;
 		height: 100%;
-		background: red;
+		// background: red;
 
 		.sidenav {
 			display: none;
 			flex-direction: column;
-			padding: 60px 0 50px 60px;
-			gap: 0.8rem;
+			padding: 24px 0 24px 24px;
 
 			h2 {
 				flex: 1 1 10%;
-				text-align: end;
-				font-size: 1.25rem;
+				font-size: 1.35rem;
 				font-weight: 400;
+				padding-bottom: 8px;
+				// outline: 2px solid orchid;
 			}
 			h3 {
 				flex: 1 1 80%;
-				text-align: end;
-				font-size: .7rem;
+				text-align: justify;
+				font-size: .6rem;
+				// outline: 2px solid orchid;
 			}
 			.social-links {
 				flex: 1 1 50%;
 				writing-mode: vertical-lr;
+				// background: lightcyan;
+				text-align: end;
 
 				display: inline;
 				margin-right: auto;
-				margin-left: auto;
-
+				// margin-left: auto;
+				// outline: 2px solid orchid;
 				.hr {
 					height: 100px;
 					border-left: 2px solid $grey;
@@ -241,9 +244,10 @@ body {
 		.sidenav {
 			background: white;
 			display: flex !important;
+			width: 15%;
 		}
 		.grid-container {
-			max-width: 90%;
+			max-width: 85%;
 
 			.header {
 				.navlinks {

@@ -28,33 +28,32 @@ body {
 				// outline: 2px solid orchid;
 			}
 			h3 {
-				flex: 1 1 80%;
+				flex: 1 1 70%;
 				text-align: justify;
 				font-size: .6rem;
 				// outline: 2px solid orchid;
 			}
 			.social-links {
-				flex: 1 1 50%;
+				flex: 1 1 70%;
 				writing-mode: vertical-lr;
 				// background: lightcyan;
 				text-align: end;
-
 				display: inline;
 				margin-right: auto;
-				// margin-left: auto;
 				// outline: 2px solid orchid;
+
 				.hr {
-					height: 100px;
+					height: 70px;
 					border-left: 2px solid $grey;
 					display: inline-block;
-					margin-bottom: 26px;
+					margin-bottom: 14px;
 				}
 
 				a {
 					text-decoration: none;
 					color: $grey;
 					&:hover {
-						color: $lime-yellow;
+						color: $sea-green;
 					}
 				}
 			}
@@ -94,7 +93,7 @@ body {
 
 			h1 {
 				font-family: 'Raleway';
-				font-size: 3.6rem;
+				font-size: 3.1rem;
 				font-weight: 500;
 			}
 
@@ -219,7 +218,7 @@ body {
 	}
 
 	.hero__title {
-		font-size: 3.9rem;
+		font-size: 3.6rem;
 	}
 }
 
@@ -244,10 +243,10 @@ body {
 		.sidenav {
 			background: white;
 			display: flex !important;
-			width: 15%;
+			width: 20%;
 		}
 		.grid-container {
-			max-width: 85%;
+			max-width: 80%;
 
 			.header {
 				.navlinks {
@@ -261,7 +260,7 @@ body {
 
 			.hero {
 				.hero__greeting {
-					left: -24px !important;
+					left: -84px !important;
 				}
 
 				.hero__title {
@@ -283,7 +282,6 @@ body {
 					height: 100%;
 					width: 50%;
 					content: "";
-					outline: olive;
 				}
 				.container {
 					width: 50%;
@@ -293,22 +291,6 @@ body {
 					display: none !important;
 				}
 			}
-		}
-	}
-}
-@media (min-width: 767px) and (max-height: 636px) {
-	.social-links {
-		span.hr {
-			display: none !important;
-		}
-	}
-	.hero__title {
-		font-size: 3.6rem !important;
-	}
-
-	.bottom {
-		.footer {
-			display: none !important;
 		}
 	}
 }
@@ -323,21 +305,11 @@ body {
 				display: inline-block !important;
 			}
 		}
-	}
-}
-@media (min-width: 992px) and (max-height: 636px) {
-	.social-links {
-		span.hr {
-			display: none !important;
-		}
-	}
-	.hero__title {
-		font-size: 3.6rem !important;
-	}
 
-	.bottom {
-		.footer {
-			display: none !important;
+		.hero {
+			.hero__greeting {
+				font-size: 16px !important;
+			}
 		}
 	}
 }
@@ -346,6 +318,13 @@ body {
 @media (min-width: 1200px) {
 	html {
 		font-size: 1.4rem;
+
+		.hero {
+			.hero__greeting {
+				font-size: 16px !important;
+			}
+		}
+
 		.bottom > ul > li {
 			font-size: 1.4rem;
 		}

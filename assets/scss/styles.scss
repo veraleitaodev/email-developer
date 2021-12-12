@@ -127,6 +127,7 @@ body {
 				position: relative;
 
 				.hero__greeting {
+					display: none;
 					position: absolute;
 					top: 25%;
 					left: 20%;
@@ -141,7 +142,7 @@ body {
 
 				.hero__title {
 					position: absolute;
-					top: 45%;
+					top: 35%;
 					left: 20%;
 					max-width: 70%;
 					line-height: 1.5;
@@ -151,15 +152,35 @@ body {
 			.bottom {
 				grid-row: 7/13;
 				background: $lime-yellow;
-				padding: 24px;
+				// padding: 24px;
+				display: flex;
+				flex: 1 1 100%;
 
 				.container-large {
-					display: none;
+					display: block !important;
+					background: $sea-green;
+					height: 100%;
+					width: 35%;
+					padding: 0 0 24px 24px;
+
+					.footer {
+						display: flex;
+						align-items: flex-end;
+						height: 100%;
+
+						.footer__about {
+							margin-right: auto;
+						}
+					}
 				}
 
 				.container {
 					background: $lime-yellow;
+					width: 65%;
 					height: 100%;
+					padding: 0 24px 24px 0;
+					display: flex;
+					flex-direction: column;
 
 					.moto {
 						display: flex;
@@ -179,8 +200,8 @@ body {
 						align-items: flex-end;
 						height: 20%;
 
-						.footer__about {
-							margin-right: auto;
+						.footer__contact {
+							margin-left: auto;
 						}
 					}
 				}
@@ -251,6 +272,7 @@ body {
 
 			.hero {
 				.hero__greeting {
+					display: inline-block !important;
 					left: -84px !important;
 				}
 
@@ -258,7 +280,7 @@ body {
 					left: -24px !important;
 					max-width: 80% !important;
 					font-size: 4.1rem;
-					top: 50% !important;
+					top: 60% !important;
 				}
 			}
 
@@ -271,11 +293,11 @@ body {
 					display: block !important;
 					background: $sea-green;
 					height: 100%;
-					width: 50%;
+					width: 50% !important;
 					content: "";
 				}
 				.container {
-					width: 50%;
+					width: 50% !important;
 				}
 
 				.footer {
